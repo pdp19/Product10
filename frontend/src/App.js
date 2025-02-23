@@ -1,12 +1,13 @@
 import React from 'react';
-import BixbitePage from './components/BixbitePage'
+import LoginPage from './components/LoginPage';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
 
   return (
       <Routes>
-        <Route path="/" element={<BixbitePage />} />
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
   );
 };
